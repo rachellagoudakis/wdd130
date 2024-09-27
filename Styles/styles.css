@@ -1,26 +1,26 @@
-nav {             /* this means that the <nav> element as the selected element apply the following style declarations: */
+nav {             
     background-color: steelblue;
-    padding: 10px;  /* Padding, or area between content and border is set to 10px */
+    padding: 10px;  
 }
 
-nav a {               /* this means that the <a> anchor/link elements in the HTML that are children of the <nav> element apply the following declarations: */
-    color: white;   /* foreground will be white */
-    display: block;   /*the display will change from the default of inline to BLOCK */
-    padding: 20px;    /* each anchor tag will have padding of 20px */
+nav a {              
+    color: white;   
+    display: block;   
+    padding: 20px;    
 }
 
-h1 {                   /* this CSS rule references the <h1> (heading1) element as the selected element and applies the following declaration*/
-    color: steelblue; /* The foreground font color is set to steelblue */
+h1 {                   
+    color: steelblue; 
 }
 
-img {                   /* This CSS rule references all the <img> (image) elements as the selector and applies the following declarations: */
-    width: 150px;       /* a set width with a height that will adjust dynamically to fir the images aspect ratio */
+img {                   
+    width: 150px;       
     height: auto;       
-    border: 1px solid steelblue; /* a border shortcut that names the width, type of border, and color of the border */
-    padding: 2px;       /* a box shadow around the image border with zero offset and depth of 30px in gray*/
+    border: 1px solid steelblue; 
+    padding: 2px;      
     box-shadow: 0 0 30px gray;
 }
 
-p {                     /* This rule selects all the <p> (paragraph) elements and applies the following: */
-    padding: 10px;      /* padding between the paragraph content and the border is 10px */
+p {                    
+    padding: 10px;     
 }
