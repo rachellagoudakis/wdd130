@@ -1,3 +1,9 @@
+* {   /* asterisk is the universal selector for css */
+    margin: 0;  /*margin & padding to 0 ensures all elements on the pag will have no margin or padding */
+    padding: 0; /* fyi this looks better at 2 than zero! */
+    box-sizing: border-box; /* setting box sizing to "border-box", this tells the browser to account for ANY border and padding in the values I specify for an elements width and height*/
+}
+
 nav {             
     background-color: steelblue;
     padding: 10px;  
@@ -13,7 +19,8 @@ h1 {
     color: steelblue; 
 }
 
-main img {                   
+main img {  
+    float: right;                 
     width: 150px;       
     height: auto;       
     border: 1px solid steelblue; 
@@ -27,24 +34,35 @@ p {
 
 main {
     max-width: 840px;
+
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /*1*/
-    padding: 20px;
-    background-color: beige;
-    color: black;
     text-align: center;
+    /* margin-left: 1rem; /* to see if this stops color bleeding  */ 
+    
+} /* This is the header over the Australia aside kangaroo picture */
+aside h2 { 
+    position: absolute;
+    top: 640px;
+    left: 60px;
 }
+
 
 aside img {
     width: 200px;
     height: auto;
 }
 footer {
-    margin-top: 1em;
+    margin-top: 1rem;
     border-top: 1px solid black;
     text-align: center;
+}
+/* CLASS SELECTORS */
+.box { /* make sure to have the . in the syntax when defining the box class! */
+    margin: 1rem; /* 1rem means match the root font size */
+    border: 1px rgba(0, 0, 0, 0.1); 
+    padding: 1rem;
+    background-color: rgb(133, 242, 216); 
 }
