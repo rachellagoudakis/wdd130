@@ -40,6 +40,7 @@ main {
 aside {
     width: 20rem;
     text-align: center;
+    position: relative;
     /* margin-left: 1rem; /* to see if this stops color bleeding  */ 
     
 } /* This is the header over the Australia aside kangaroo picture */
