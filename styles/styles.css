@@ -3,6 +3,10 @@
     padding: 0; /* fyi this looks better at 2 than zero! */
     box-sizing: border-box; /* setting box sizing to "border-box", this tells the browser to account for ANY border and padding in the values I specify for an elements width and height*/
 }
+body { /* this is how to push the font to Roboto (which we inserted from fonts.google.com. Next talk to the paragraphs section */
+    font-size: 16;
+    font-family: Roboto, Arial, sans-serif;
+}
 
 nav {             
     background-color: steelblue;
@@ -17,19 +21,22 @@ nav a {
 
 h1 {                   
     color: steelblue; 
+    padding: .5rem;
 }
 
 main img {  
-    float: right;                 
+                
     width: 150px;       
     height: auto;       
     border: 1px solid steelblue; 
     padding: 2px;      
     box-shadow: 0 0 10px gray;
+    float: right;   
+    margin: 0 0 1rem 1rem; /* top 0, right 0, bottom 1rem, left 1rem */
 }
 
 p {                    
-    padding: 0px;     
+    padding: 1rem;     /*this WAS zero. changed to 1rem after adding font*/
 }
 
 main {
@@ -40,14 +47,14 @@ main {
 aside {
     width: 20rem;
     text-align: center;
-    position: relative;
+    position: relative; /* Validation showed this needed to be done! */
     /* margin-left: 1rem; /* to see if this stops color bleeding  */ 
     
 } /* This is the header over the Australia aside kangaroo picture */
 aside h2 { 
-    position: absolute;
-    top: 640px;
-    left: 60px;
+    position: absolute;  /* absolute compared to it's container - whatever the container is, it'll stay with it*/
+    top: 15px;
+    left: 45px;
 }
 
 
@@ -61,9 +68,14 @@ footer {
     text-align: center;
 }
 /* CLASS SELECTORS */
-.box { /* make sure to have the . in the syntax when defining the box class! */
-    margin: 1rem; /* 1rem means match the root font size */
+.box { /* make sure to have the . in the syntax when defining the box class! THIS relates to the designation given to the ASIDE element in the html page*/
+    margin: 1rem; /* 1rem means match the baseline font size */
     border: 1px solid rgba(0, 0, 0, 0.1); /* SOLID was missing - need it to make proper syntax */
     padding: 1rem;
     background-color: rgb(133, 242, 216); 
+    color: black;
+}
+
+.indent { /* applied to the ul in the ul class, following the box class*/
+    padding-left: 2rem; /* this is the padding left of the ul*/
 }
