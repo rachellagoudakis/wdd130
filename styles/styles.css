@@ -62,7 +62,7 @@ footer {
 /* CLASS SELECTORS */
 .box { /* make sure to have the . in the syntax when defining the box class! */
     margin: 1rem; /* 1rem means match the root font size */
-    border: 1px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(0, 0, 0, 0.1); /* SOLID was missing - need it to make proper syntax */
     padding: 1rem;
     background-color: rgb(133, 242, 216); 
 }
