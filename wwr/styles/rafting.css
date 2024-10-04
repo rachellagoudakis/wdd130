@@ -1,0 +1,114 @@
+* {
+    background-color: var(--accent-color1);
+}
+
+:root { /*these are called upon when using the var() function in declarations */
+    --heading-background-color: #8ecae6;  /* Sky Blue */
+    --heading-text-color: #023047; /* Prussian Blue - dark */
+    --heading-font: 'Rock Salt', Roboto, sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgba(0,0,0,0.1);
+    --primary-color: #FB8500; /* UT Orange */
+    --secondary-color: #8ecae6; /* Sky Blue */
+    --accent-color1: #023047; /* Prussian Blue*/
+    --accent-color2: #ffb703; /* Selective Yellow */
+
+}
+
+body {
+    margin: 50px;
+    font-family: var(--paragraph-font);
+    color: var(--accent-color1);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent-color1)
+
+}
+/*Site Logo*/
+header img {
+    width: 150px;
+}
+/*Header navigation menu - 4 links */
+header nav {
+    display: flex;
+    color: white;
+} 
+/*header nav*/
+nav a {
+    color: white;
+    padding: 2px;
+} 
+
+.hero { /*hero image */
+    position: relative; /* if the child elements are absolute, this has to be relative */
+    width: 100%; /*makes the hero responsive */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 { /* White Water Rafting Text */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--);
+    background-color: rgba(142, 202, 230, 0.75);
+
+    font-size: 4em;
+    font-family: var(--heading-font);
+    padding: var(--padding 0.5); /* padding is 0.5 x the root var */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7)  
+      
+}
+
+.hero > img {
+    display: block;
+    width: 100%; /* makes sure the image fills the container width-ways*/
+    height: auto; /* to keep aspect ratio right*/
+    object-fit: cover;
+}
+
+h2 {
+    background-color: var(--accent-color1);
+    color: var(--heading-background-color);
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: var(--padding);
+}
+.hero article {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .75); /*transparent box background*/
+    padding: 20px;
+    width: 80%;
+    bottom: 5%;
+    left: 7%;
+
+}
+
+
+article img { /*smiley girl placement*/
+    float: right; 
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: auto;
+    /* z-index: 10;*/
+}
+
+.paragraph {
+    font-family: var(--paragraph-font);
+    color: var(--accent-color2);
+    background-color: rgba(0, 0, 0, 0)
+    
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+

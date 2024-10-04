@@ -24,7 +24,7 @@ h1 {
     padding: .5rem;
 }
 
-main img {  
+main img {   /*this is the profile picture floating to the right of the text*/
                 
     width: 150px;       
     height: auto;       
