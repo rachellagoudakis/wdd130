@@ -1,10 +1,13 @@
 * {
     background-color: var(--accent-color1);
+   
+    
+
 }
 
 :root { /*these are called upon when using the var() function in declarations */
     --heading-background-color: #8ecae6;  /* Sky Blue */
-    --heading-text-color: #023047; /* Prussian Blue - dark */
+    --heading-text-color: rgb(2, 48, 71); /* Prussian Blue - dark */
     --heading-font: 'Rock Salt', Roboto, sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
     --padding: 1rem;
@@ -22,34 +25,65 @@ body {
     color: var(--accent-color1);
 }
 
-header {
-    padding: 20px;
+header {    
+	
     background-color: var(--accent-color1)
 
 }
+
+.grid-container { /* grid for logo & nav menu */
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: var(--accent-color1);
+    grid-template-columns: fr;
+    align-content: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
 /*Site Logo*/
 header img {
     width: 150px;
 }
-/*Header navigation menu - 4 links */
-header nav {
-    display: flex;
-    color: white;
-} 
+
 /*header nav*/
-nav a {
-    color: white;
-    padding: 2px;
+
+.nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+nav a {                 /* navigation buttons themselves*/
+    color: var(--heading-text-color);
+    background-color: #ffb703;
+    justify-content: center;
+    justify-items: center;
+    border: 2px solid rgba(2, 48, 71, .75);
+    min-width: 100px;
+    padding: 12px;
+    text-decoration: none;
 } 
 
-.hero { /*hero image */
+.hero {             /*hero image */
     position: relative; /* if the child elements are absolute, this has to be relative */
     width: 100%; /*makes the hero responsive */
     background-size: cover;
     background-position: center;
 }
 
-.hero h1 { /* White Water Rafting Text */
+.hero h1 {          /* White Water Rafting Text */
     position: absolute;
     width: 100%;
     text-align: center;
@@ -57,12 +91,12 @@ nav a {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--);
-    background-color: rgba(142, 202, 230, 0.75);
+    background-color: rgba(142, 202, 230, 0.5);
 
-    font-size: 4em;
+    font-size: 3em;
     font-family: var(--heading-font);
     padding: var(--padding 0.5); /* padding is 0.5 x the root var */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7)  
+    text-shadow: 2px 2px 8px rgba(242, 247, 248, 0.532)  
       
 }
 
@@ -79,15 +113,17 @@ h2 {
     font-family: var(--heading-font);
     text-align: center;
     padding: var(--padding);
+    font-size: 2rem;
+    margin: 10px;
 }
-.hero article {
+.hero article { /* transparent box over hero image with text */
     position: absolute;
     background-color: rgba(0, 0, 0, .75); /*transparent box background*/
     padding: 20px;
-    width: 80%;
+    width: 70%;
     bottom: 5%;
-    left: 7%;
-
+    left: 14%;
+    
 }
 
 
@@ -100,6 +136,49 @@ article img { /*smiley girl placement*/
     /* z-index: 10;*/
 }
 
+.grid-container3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+    margin: 2rem;
+  }
+  
+  figure { /*this section allows for a photo caption*/
+    text-align: center;
+    margin: 10px;
+  }
+  
+  figcaption {
+    font-size: 0.9em;
+    color: var(--accent-color2); /* caption color */
+    margin-top: 5px;
+  }
+  
+  .grid-item {
+    text-align: center; /* history grid */
+  }
+  
+  .caption {
+    font-size: 0.9em;
+    color: #ccc; /* the caption color */
+    margin-top: 5px;
+  }
+
+.history-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1.25fr;/* three equal columns*/
+    gap:  20px; /* spacing between columns keeps it tidy */
+    align-items: center;
+    justify-items: center;
+    padding: var(--padding);
+    }
+
+.history-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
 .paragraph {
     font-family: var(--paragraph-font);
     color: var(--accent-color2);
@@ -107,8 +186,45 @@ article img { /*smiley girl placement*/
     
 }
 
+.footer {           /* footer has grid inserted into it*/
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;/* 3/4 of the space & 1/4 of the space */
+    gap:  20px; /* spacing between columns keeps it tidy */
+    align-items: center;
+    justify-items: center;
+    padding: var(--padding);
+    margin: 4rem;
+   
+    
+}
+
+.footer-left {          /* footer grid left */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;/* 3/4 of the space & 1/4 of the space */
+    gap:  20px; /* spacing between columns keeps it tidy */
+    align-items: center;
+    justify-items: center;
+    padding: var(--padding);
+   
+}
+
+.footer-center {           /* footer grid center */
+    font-family: var(--paragraph-font);
+    color: var(--accent-color2);
+    background-color: rgba(0, 0, 0, 0);  
+    justify-content: center;
+}
+
+.footer-right {             /* footer grid right */
+    font-family: var(--paragraph-font);
+    color: var(--accent-color2);
+    background-color: rgba(0, 0, 0, 0);  
+    justify-content: center;
+}
+
 .sociallinks a {
     text-decoration: none;
+    background-color: var(--accent-color1);
 }
 
 

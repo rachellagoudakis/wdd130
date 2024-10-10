@@ -14,66 +14,120 @@
     </style>
 </head>
 <body>
-    <div class="container">
     <header>
-        <img src="../wwr/images/logotransparent.webp" alt="Life Adventures" width="200">
-        <nav>
-            <a href="index.html" target="_blank">Home</a>
-            <a href="about.html" target="_blank">About</a>
-            <a href="trips.html" target="_blank">Trips</a>
-            <a href="contact.html" target="_blank">Contact</a>
-        </nav>
-
+        <div class="grid-container"> 
+            <div class="grid-item"> <!--header column1-->
+                <div>
+                    <img src="../wwr/images/logotransparent.webp" alt="Life Adventures" width="200">
+                </div>
+            </div>
+            
+        <div class="grid-item "> <!--header column2-->
+            <nav class="nav">
+                <a href="index.html" target="_blank">Home</a>
+                <a href="about.html" target="_blank">About</a>
+                <a href="trips.html" target="_blank">Trips</a>
+                <a href="contact.html" target="_blank">Contact</a>
+            </nav> 
+                            
+            </div>       
+          
+    
     </header>
    
     <main>
         <div class="hero">
             <img src="../wwr/images/hero.webp" alt="Life Adventures White Water Rafting">
                 <h1>White Water Rafting</h1>
-                    <article>
-                        <img src="../wwr/images/customer.webp" alt="One Happy Customer">
-                        <p class="paragraph">
-                            INSERT company purpose, mission, creed, motto, etc. It is Ok to use non-sense, 
-                            placeholder language for now Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic a 
-                            consequatur dolor expedita error quasi perspiciatis numquam ipsum doloremque exercitationem vero 
-                            dolorem aliquid eaque, velit alias, voluptate tenetur autem rem. Lorem ipsum dolor, sit amet 
-                            consectetur adipisicing elit. Iure neque dignissimos dolore eum libero aut sunt eos illo facere 
-                            reiciendis, dolores nemo! Maiores, totam quasi exercitationem magni itaque harum minus?</p>
-                    </article>
+                <article>
+                    <img src="../wwr/images/customer.webp" alt="One Happy Customer" width="200">
+                    <p class="paragraph">
+                        INSERT company purpose, mission, creed, motto, etc. It is Ok to use non-sense, 
+                        placeholder language for now Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic a 
+                        </p>
+                </article>
         </div>
-        <section>
-            <h2>History</h2>
-            <p class="paragraph">INSERT Brief history of the company here Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Dolor facere quibusdam voluptatibus enim et doloremque possimus unde itaque, blanditiis labore qui ipsa, impedit, 
-                eveniet autem excepturi similique sint dicta beatae? consequatur dolor expedita error quasi perspiciatis numquam 
-                ipsum doloremque exercitationem vero dolorem aliquid eaque, velit alias, voluptate tenetur autem rem. Lorem ipsum dolor, sit amet 
-                consectetur adipisicing elit. Iure neque dignissimos dolore eum libero aut sunt eos illo facere 
-                reiciendis, dolores nemo! Maiores, totam quasi exercitationem magni itaque harum minus?</p>
-        </section>
-        <section>
-            <h2>Adventure Awaits You!</h2>
-            <img src="../wwr/images/image1.webp" alt="white water rafting" width="500">
-            <img src="../wwr/images/image2.webp" alt="white water rafting" width="500">
-            <img src="../wwr/images/image3.webp" alt="white water rafting" width="500">
-            <img src="../wwr/images/image4.webp" alt="white water rafting" width="500">
-            <img src="../wwr/images/image5.webp" alt="white water rafting" width="500">
-        </section>
-
+        <div>
+            <section>
+                <h2>History</h2>
+                <article class="history-grid">
+                    <!-- Left column -->
+                    <div class="history-left">
+                        <p class="paragraph">
+                            Brief history of the company Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facere 
+                            quibusdam voluptatibus enim et doloremque possimus unde itaque, blanditiis labore qui ipsa, impedit, 
+                            eveniet autem excepturi similique sint dicta beatae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facere 
+                        </p>
+                    </div>
+            
+                    <!-- Center column with image -->
+                    <div class="history-center">
+                        <img src="../wwr/images/historyimage.webp" alt="life Adventures" width="400">
+                    </div>
+            
+                    <!-- Right column -->
+                    <div class="history-right">
+                        <p class="paragraph">
+                            Consequatur dolor expedita error quasi perspiciatis numquam ipsum doloremque exercitationem vero dolorem 
+                            aliquid eaque, velit alias, voluptate tenetur autem rem. Lorem ipsum dolor, sit amet reiciendis, dolores nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor facere 
+                        </p>
+                    </div>
+                </article>
+            </section>
+            
+        </div>
+        <div>
+            <section class="h2">
+                <h2>Adventure Awaits You!</h2>
+                <div class="grid-container3">
+                  <figure>
+                    <img src="../wwr/images/image1.webp" alt="White water rafting" width="250">
+                    <figcaption>White Water Rafting</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="../wwr/images/image2.webp" alt="Rafting team" width="250">
+                    <figcaption>White Water Rafting</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="../wwr/images/image3.webp" alt="Rafting Adventure" width="250">
+                    <figcaption>White Water Rafting</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="../wwr/images/image4.webp" alt="Exciting Rapids" width="250">
+                    <figcaption>White Water Rafting</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="../wwr/images/image5.webp" alt="Team Spirit" width="250">
+                    <figcaption>White Water Rafting</figcaption>
+                  </figure>
+                </div>
+              </section>
+              
+              
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2024 Life Adventures | Rachel Lagoudakis</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com">
+    <footer class="footer">
+        <div class="footer-left"></div>
+      
+        <div class="footer-center">
+            <p class="paragraph">
+            <p>&copy; 2024 Life Adventures | Rachel Lagoudakis</p>
+        </div>
+        <div class="footer-right">
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
                 <img src="../wwr/images/facebook.webp" alt="Facebook" width="50">
-            </a>
-            <a href="https://twitter.com">
+                </a>
+                <a href="https://twitter.com">
                 <img src="../wwr/images/twitter.webp" alt="twitter" width="50">
-            </a>
-            <a href="https://instagram.com">
-                <img src="../wwr/images/instagram.webp" alt="instagram" width="50">
-            </a>
-        </nav>
-
+                </a>
+                <a href="https://instagram.com">
+                    <img src="../wwr/images/instagram.webp" alt="instagram" width="50">
+                </a>
+            </nav>
+        </div>
+        
+        
     </footer>
     </div>
     
