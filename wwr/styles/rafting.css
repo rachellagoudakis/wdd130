@@ -39,7 +39,6 @@ header {
 
 .grid-item {
     background-color: var(--accent-color1);
-    grid-template-columns: 1fr;
     align-content: center;
 }
 
@@ -91,12 +90,12 @@ nav a {                 /* navigation buttons themselves*/
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--);
-    background-color: rgba(142, 202, 230, 0.5);
+    background-color: rgba(142, 202, 230, 0.75);
 
     font-size: 3em;
     font-family: var(--heading-font);
     padding: var(--padding); /* padding is 0.5 x the root var */
-    text-shadow: 2px 2px 8px rgba(242, 247, 248, 0.532)  
+ 
       
 }
 
