@@ -10,7 +10,7 @@
     --heading-text-color: rgb(2, 48, 71); /* Prussian Blue - dark */
     --heading-font: 'Rock Salt', Roboto, sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
-    --padding: 1rem;
+    --padding: 0rem;
     --border: 1px solid rgba(0,0,0,0.1);
     --primary-color: #FB8500; /* UT Orange */
     --secondary-color: #8ecae6; /* Sky Blue */
@@ -39,7 +39,7 @@ header {
 
 .grid-item {
     background-color: var(--accent-color1);
-    grid-template-columns: fr;
+    grid-template-columns: 1fr;
     align-content: center;
 }
 
@@ -95,7 +95,7 @@ nav a {                 /* navigation buttons themselves*/
 
     font-size: 3em;
     font-family: var(--heading-font);
-    padding: var(--padding 0.5); /* padding is 0.5 x the root var */
+    padding: var(--padding); /* padding is 0.5 x the root var */
     text-shadow: 2px 2px 8px rgba(242, 247, 248, 0.532)  
       
 }
