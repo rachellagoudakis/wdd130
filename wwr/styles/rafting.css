@@ -381,19 +381,22 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     gap: 20px; /* Space between the columns */
-    align-items: center;
+    align-items: stretch;
     padding: 100px;
+    height: 500px;
 }
 
 .map-left-column {
     font-family: Arial, sans-serif;
     color: white;
+    height: 100%;
 }
 
 .map-right-column {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .map-container iframe {
