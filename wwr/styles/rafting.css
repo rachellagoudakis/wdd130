@@ -1,5 +1,7 @@
 * {
     background-color: var(--accent-color1);
+    box-sizing: border-box;
+    padding: 0;
    
     
 
@@ -8,11 +10,12 @@
 :root { /*these are called upon when using the var() function in declarations */
     --heading-background-color: #8ecae6;  /* Sky Blue */
     --heading-text-color: rgb(2, 48, 71); /* Prussian Blue - dark */
+    --body-text-color: #cc8500; /* yellow is slightly darker for better contrast*/
     --heading-font: 'Rock Salt', Roboto, sans-serif;
     --paragraph-font: 'Roboto', sans-serif;
     --padding: 0rem;
     --border: 1px solid rgba(0,0,0,0.1);
-    --primary-color: #FB8500; /* UT Orange */
+    /* --primary-color: #FB8500; /* UT Orange */ 
     --secondary-color: #8ecae6; /* Sky Blue */
     --accent-color1: #023047; /* Prussian Blue*/
     --accent-color2: #ffb703; /* Selective Yellow */
@@ -47,6 +50,7 @@ header {
     justify-content: space-around;
     align-items: center;
     gap: 10px;
+    
 }
 
 /*Site Logo*/
@@ -66,7 +70,7 @@ header img {
 
 nav a {                 /* navigation buttons themselves*/
     color: var(--heading-text-color);
-    background-color: #ffb703;
+    background-color: var(--accent-color2);
     justify-content: center;
     justify-items: center;
     border: 2px solid rgba(2, 48, 71, .75);
@@ -86,15 +90,14 @@ nav a {                 /* navigation buttons themselves*/
     position: absolute;
     width: 100%;
     text-align: center;
-    top: 15%;
-    left: 50%;
+    top: 17.5%;
+    left: 49%;
     transform: translate(-50%, -50%);
-    color: var(--);
+    color: var(--accent-color1);
     background-color: rgba(142, 202, 230, 0.75);
-
     font-size: 3em;
     font-family: var(--heading-font);
-    padding: var(--padding); /* padding is 0.5 x the root var */
+    padding: 0.5rem; /* padding is 0.5 x the root var */
  
       
 }
@@ -106,22 +109,60 @@ nav a {                 /* navigation buttons themselves*/
     object-fit: cover;
 }
 
+h1 {
+    margin: 1rem;
+    font-size: 3em;
+    color: var(--accent-color2);
+    text-align: center;
+}
+
 h2 {
     background-color: var(--accent-color1);
-    color: var(--heading-background-color);
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 4fr;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+h3 {
+    background-color: var(--accent-color1);
+    color: var(--accent-color2);
     font-family: var(--heading-font);
     text-align: center;
     padding: var(--padding);
     font-size: 2rem;
     margin: 10px;
 }
+
+h4 {
+    background-color: var(--accent-color1);
+    color: var(--accent-color2);
+    font-family: var(--paragraph-font);
+    text-align: center;
+    padding: var(--padding);
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+h5 {
+    display: none; /*HTML says this header MUST remain, but we need it to be invisible */
+}
+
+
+p {
+    font-family:var(--paragraph-font);
+    color: var(--accent-color2);
+}
+
 .hero article { /* transparent box over hero image with text */
     position: absolute;
-    background-color: rgba(0, 0, 0, .75); /*transparent box background*/
-    padding: 20px;
-    width: 70%;
+    background-color: rgba(0, 0, 0, .8); /*transparent box background*/
+    padding: 10px;
+    width: 90%;
     bottom: 5%;
-    left: 14%;
+    left: 3em;
     
 }
 
@@ -130,10 +171,20 @@ article img { /*smiley girl placement*/
     float: right; 
     margin-left: 20px;
     margin-bottom: 10px;
-    width: 200px;
-    height: auto;
-    /* z-index: 10;*/
+    width: auto;
+    height: 120px;
+    z-index: 10;
 }
+
+.placeholder-1 { /* STAFF PROFILE BACKGROUNDS */
+	width: 400px;
+	height: 200px;
+	background: var(--accent-color1);
+	border-color: #8ecae6;
+	border-width: 2px;
+	border-style: solid;
+}
+
 
 .grid-container3 {
     display: flex;
@@ -141,28 +192,29 @@ article img { /*smiley girl placement*/
     flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
     margin: 2rem;
   }
+
   
-  figure { /*this section allows for a photo caption*/
+figure { /*this section allows for a photo caption*/
     text-align: center;
     margin: 10px;
-  }
+}
   
-  figcaption {
+figcaption {
     font-size: 0.9em;
     color: var(--accent-color2); /* caption color */
     margin-top: 5px;
-  }
+}
   
-  .grid-item {
-    text-align: center; /* history grid */
-  }
-  
-  .caption {
-    font-size: 0.9em;
-    color: #ccc; /* the caption color */
-    margin-top: 5px;
-  }
+.grid-item {
+text-align: center; /* history grid */
+}
 
+.caption {
+font-size: 0.9em;
+color: #ccc; /* the caption color */
+margin-top: 5px;
+}
+/* ----------------------------------------------HISTORY GRID-----------------------------------------------------------------*/
 .history-grid {
     display: grid;
     grid-template-columns: 1.25fr 1fr 1.25fr;/* three equal columns*/
@@ -180,11 +232,11 @@ article img { /*smiley girl placement*/
 
 .paragraph {
     font-family: var(--paragraph-font);
-    color: var(--accent-color2);
+    color: #ffffff; /*this is the text in the transparent black hero box*/
     background-color: rgba(0, 0, 0, 0)
     
 }
-
+/*----------------------------------------------------------FOOTER-----------------------------------------------------------------*/
 .footer {           /* footer has grid inserted into it*/
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;/* 3/4 of the space & 1/4 of the space */
@@ -209,7 +261,14 @@ article img { /*smiley girl placement*/
 
 .footer-center {           /* footer grid center */
     font-family: var(--paragraph-font);
-    color: var(--accent-color2);
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);  
+    justify-content: center;
+}
+
+.footer-font {
+    font-family: var(--paragraph-font);
+    color: #ffffff;
     background-color: rgba(0, 0, 0, 0);  
     justify-content: center;
 }
@@ -225,5 +284,242 @@ article img { /*smiley girl placement*/
     text-decoration: none;
     background-color: var(--accent-color1);
 }
+/*----------------------------------------------------------CONTACT-----------------------------------------------------------------*/
+
+section {
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.contact-staff-grid {
+    display: flex;
+    justify-content: space-around;
+    gap:  20px; /* spacing between columns keeps it tidy */
+    align-items: center;
+    justify-items: center;
+    padding: var(--padding);
+    
+    }
+
+.contact-left {
+    display: grid;
+    grid-template-columns: 1fr;  /* equally spaced columns */
+    gap:  20px; /* spacing between columns keeps it tidy */
+    align-items: center;
+    justify-items: center;
+    padding: var(--padding);
+    }
+
+.contact-center {
+    display: grid;
+    grid-template-columns: 1fr;  /* equally spaced columns */
+    gap:  20px; /* spacing between columns keeps it tidy */
+    align-items: center;
+    justify-items: center;
+    padding: var(--padding);
+    }
+
+ 
+.contact-right {
+    display: grid;
+    grid-template-columns: 1fr;  /* equally spaced columns */
+    gap:  20px; /* spacing between columns keeps it tidy */
+    align-items: center;
+    justify-items: center;
+    padding: var(--padding);
+    } 
 
 
+.contact-form-body { /*field labels on form*/
+    font-family: var(--paragraph-font);
+    font-size: 1.2em;
+    color: #ffffff /* field label color*/
+    
+    
+}
+
+
+.staff-name {
+    font-weight: bold; /* Bold for name */
+    color: #ffb703;
+    text-align: right; /* Right-aligns the text */
+    display: block; /* Ensures it behaves like a block element */
+    width: 100%; /* Takes the full width of the parent container */
+    
+}
+
+.staff-position {
+    font-style: italic; /* Italic font for position */
+    display: block; /* Ensure position is on a new line */
+    color: #ffffff;
+    text-align: right; /* Right-aligns the text */
+    display: block; /* Ensures it behaves like a block element */
+    width: 100%; /* Takes the full width of the parent container */
+}
+
+.staff-bio {
+    font-weight: normal; /* Default weight for bio */
+    display: block; /* Ensure bio is on a new line */
+    text-wrap: wrap;
+    color: #ffffff;
+    text-align: right; /* Right-aligns the text */
+    display: block; /* Ensures it behaves like a block element */
+    width: 100%; /* Takes the full width of the parent container */
+}
+
+.placeholder-1 img {
+    width: 200px;
+    height: auto;
+}
+/*-------------------------------MAP SECTION---------------------------*/
+
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the columns */
+    align-items: center;
+    padding: 150px;
+}
+
+.map-left-column {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.map-right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    width: 100%; 
+    height: 100%; 
+    border: none;
+}
+
+/*--------------------Contact Form Section-------------------*/
+
+form {
+    width: 650px;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: 2px solid rgba(251, 251, 251, 1);
+    border-radius: 0.5rem; /*form border*/ 
+    background: var(--accent-color1);   /* changes form background */
+    display: grid;
+    gap: 1.5rem;
+    
+
+}
+
+
+fieldset {                /* the box around each contact form section */
+    display: grid;
+    grid-gap: .5rem;
+    margin: 0.5rem;
+    border: 1px solid #8ecae6;
+    background: var(--accent-color1);
+    padding: 1rem;
+}
+
+legend {            /*fieldset legend below */
+    padding: 0.5rem;
+    color: rgb(250, 248, 247);
+    
+    font-size: 1.3rem;
+} 
+
+input, select, textarea {
+    padding: 1rem; /* Space inside input fields */
+    margin-bottom: 1rem; /* Space below each input field */
+    font-size: 1rem;
+    line-height: 1.5; /* Line spacing inside input fields */
+    background-color: #1f2937;
+    color: #ffffff;
+    border: 1px solid #0ea5e9; /* Fixing border issue */
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+label {
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: var(--accent-color1);
+}
+
+input, select {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #ccc;   
+    
+}
+
+
+/* Style the textarea placeholder */
+textarea::placeholder {
+    color: #ffffff; /* Same light gray color */
+    font-style: normal; /* Optional: Add styling for better UX */
+}
+textarea {
+    height: 120px; /*adjust and see how it impacts the appearance*/
+    background-color: #1f2937; /* Dark background to match other fields */
+    color: #ffffff; /* White text for user input */
+    border: 1px solid #0ea5e9;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: center;
+}
+
+button {
+    margin: 1rem;
+    background-color: var(--heading-background-color);
+    color: var(--accent-color1);
+    border: solid;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.5rem;
+}
+
+.form-item {
+    display: grid;
+    
+    
+}
+
+.column1 {
+    grid-template-columns: 1fr 1fr;
+    margin: 0.5rem 0 ;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.form-label {
+    text-align: left;
+    padding-right: 1rem;
+    background: var(--accent-color2);
+   
+    
+}
+
+/* Style the text input, email input, and select dropdown */
+input[type="text"], input[type="email"], select, textarea {
+    background-color: #1f2937; /* Dark background on input fields */
+    
+    color: #ffffff; /* White text INSIDE fields */
+    border: 1px solid #ffffff; /* Border color */
+    padding: 10px; /* Padding inside input field */   
+    width: 100%;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    font-size: 1rem; /* Font size */
+
+}

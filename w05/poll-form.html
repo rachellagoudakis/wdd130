@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 130 | HTML Form - User Poll</title>
+    <link rel="stylesheet" href="../w05/poll-form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Rachel Lagoudakis | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!--step 3 Add HTML Divs-->
+                <div class="form-item column2">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>    
+                <div class="form-item column2"></div>
+                    <label for="useremail">Email</label>
+                    <input type="email" id="username" name="useremail">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Questions</legend> <!--this places the heading within the border-->
+                <label for="browser">What is your favorite internet browser?</label> <!--DROP DOWN - select one only-->
+                <div class="form-item column1">
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="safari">Safari</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div>
+                <label for="pet">Do you have a household pet?</label>
+                <div class="form-item column1">
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                    <label for="feedback">List the places you have lived:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; | HTML Form - User Poll Activity | Rachel Lagoudakis</p>
+    </footer>
+</body>
+</html>

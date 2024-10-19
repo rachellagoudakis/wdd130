@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <meta name="description" content="Contact Life Adventures for all your white water rafting needs">
+    <link rel="stylesheet" href="../wwr/styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&family=Rock+Salt&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <div class="grid-container"> 
+            <div class="grid-item"> <!--header column1-->
+                <div>
+                    <img src="../wwr/images/logotransparent.webp" alt="Life Adventures" width="200">
+                </div>
+            </div>
+            <div class="grid-item "> <!--header column2: navigation buttons-->
+                <nav class="nav">
+                    <a href="index.html" target="_blank">Home</a>
+                    <a href="about.html" target="_blank">About</a>
+                    <a href="trips.html" target="_blank">Trips</a>
+                    <a href="contact.html" target="_blank">Contact</a>
+                </nav> 
+        </div>
+        </div>   
+                      
+    </header>            
+
+    <main>
+        <div class="hero"> <!--spreads the image across the whole page-->
+            <img src="../wwr/images/hero.webp" alt="Life Adventures White Water Rafting">
+                <h1>Contact us</h1>
+                    <article> <!--this is the transparent box overtop the hero image-->
+                        <h5>this h5 title is required but hidden</h5> <!--HTML requires this heading, but we make it HIDDEN-->
+                        <img src="../wwr/images/customer.webp" alt="One Happy Customer" width="200">
+                        <p class="paragraph">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptates sit amet aperiam, voluptatibus facere alias expedita laboriosam architecto, accusamus sapiente atque itaque libero nesciunt id quaerat cupiditate vel provident. 
+                        </p>
+                    </article>
+        </div>
+        <div>
+            <section>
+                
+                <h2>Our Staff</h2>
+                <article class="contact-staff-grid">
+                    <h5>Meet Our Staff</h5> <!-- Hidden Heading -->
+                    
+                    <div class="contact-left">
+                        <p class="staff-profile">
+                            <img src="../wwr/images/contactprofile1.webp" alt="Staff Profile 1" width="200">
+                            <span class="staff-name">Brooke Waters</span><br>
+                            <span class="staff-position">Instructor</span><br>
+                            <span class="staff-bio">Small bio Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, corrupti.</span>
+                        </p>
+                    </div>
+                
+                    <div class="contact-center">
+                        <p class="staff-profile">
+                            <img src="../wwr/images/contactprofile2.webp" alt="Staff Profile 2" width="200">
+                            <span class="staff-name">Rowan Rapids</span><br>
+                            <span class="staff-position">Instructor</span><br>
+                            <span class="staff-bio">Small bio Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, nobis.</span>
+                        </p>
+                    </div>
+                
+                    <div class="contact-right">
+                        <p class="staff-profile">
+                            <img src="../wwr/images/contactprofile3.webp" alt="Staff Profile 3" width="200">
+                            <span class="staff-name">Sandy Banks</span><br>
+                            <span class="staff-position">Instructor</span><br>
+                            <span class="staff-bio">Small bio Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dolor!</span>
+                        </p>
+                    </div>
+                </article>
+                
+                
+            </section>
+        </div>
+<!-----------------------------GOOGLE MAP & ADDRESS SECTION----------------------->
+        <div class="content-wrapper">
+            <div class="map-left-column">
+                <h2>Our Location</h2>
+                <p class="paragraph">We are located in Northern Sunny Queensland, where all the adventure happens. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, voluptatem!</p>
+                <p class="paragraph">Address: 123 Rapids Lane, Cairns, Australia</p>
+                <p class="paragraph">Contact: +61 400 000 000</p>
+            </div>
+
+            <div class="map-right-column map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d51343.4906777986!2d145.780416758776!3d-16.968264028637467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1729322574648!5m2!1sen!2sau" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </iframe>
+            </div>
+        </div>
+
+
+<!-----------------------------------CONTACT FORM----------------------------------->
+        <div>    
+        <section class="h2">
+            <h2>Contact Us</h2>
+                <form>
+                    <fieldset> <!--this is the box around the form section-->
+                        <legend><h4>Enter Your Details</h4></legend>
+                        
+                        <div class="contact-form-body">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>                       
+                        <div class="contact-form-body">
+                            <label for="useremail">Email</label>
+                            <input type="email" id="useremail" name="useremail">
+                        </div>
+                    </fieldset>
+                <!--PURPOSE SECTION-->
+                    <fieldset>
+                        <legend><h4>Purpose</h4></legend>
+                        <div class="contact-form-body"> 
+                            <label for="purpose">What is your purpose for contacting us today?</label>
+                            <div class="input">
+                                <select id="purpose" name="purpose" required>
+                                    <option value="" disabled selected hidden>Select a purpose</option>
+                                    <option value="generalinquiry">General Inquiry</option>
+                                    <option value="reservationquestion">Reservation Question</option>
+                                    <option value="websitequestion">Website Question</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message">Your message:</label>
+                                <textarea id="message" name="message" rows="3" placeholder="Enter your message here"></textarea>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="list" name="list"><label for="list">Tick to join our email list?</label>
+                                <div class="form-item column1"></div>
+                            </div>                            
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+               
+                    
+                </form> 
+                    
+                
+            </section>
+                
+                
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-left"></div>
+      
+        <div class="footer-center">
+            <p class="footer-font">&copy; 2024 Life Adventures | Rachel Lagoudakis</p>
+        </div>
+        <div class="footer-right">
+            <nav class="sociallinks">
+                <a href="https://facebook.com">
+                <img src="../wwr/images/facebook.webp" alt="Facebook" width="50">
+                </a>
+                <a href="https://twitter.com">
+                <img src="../wwr/images/twitter.webp" alt="twitter" width="50">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="../wwr/images/instagram.webp" alt="instagram" width="50">
+                </a>
+            </nav>
+        </div>
+        
+        
+    </footer>
+        
+</body>
+</html>
