@@ -398,7 +398,6 @@ section {
 
 .map-right-column {
     display: flex;
-    flex: column;
     justify-content: center;
     align-items: stretch;
     height: 100%;
