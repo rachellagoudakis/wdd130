@@ -378,31 +378,44 @@ section {
 
 
 .content-wrapper {
+    height: 500px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two equal columns */
     gap: 20px; /* Space between the columns */
-    align-items: stretch;
     padding: 100px;
-    height: 500px;
+       
 }
 
 .map-left-column {
-    font-family: Arial, sans-serif;
+   
+    font-family: 'Roboto', sans-serif;
     color: white;
     height: 100%;
+    align-items: center;
+    justify-items: start;
 }
 
 .map-right-column {
     display: flex;
+    flex: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     height: 100%;
+    width: 100%;
+   
+}
+
+.map-container  {
+    width: 100%; 
+    height: 100%; 
+    border: 0; /* Remove border */
 }
 
 .map-container iframe {
     width: 100%; 
     height: 100%; 
-    border: 0;
+    border: 0; /* Remove border */
 }
 
 /*--------------------Contact Form Section-------------------*/
