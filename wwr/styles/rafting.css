@@ -393,9 +393,11 @@ html, body {
 .trips-review-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px; 
+    gap: 10px; 
     padding-top: 10px;
     margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
     height: 300px;
     align-items: center;
     justify-items: center; 
@@ -408,19 +410,22 @@ html, body {
     border: 1px solid #ddd;
     height: 40%;
     width: 80%;
-    height: auto; 
+    height: 200px; 
     max-width: 300px;
     text-align: left;
 }
 
 
-.trips-review {
+.trips-review { /*Review Header*/
     font-size: 1.5rem;
-    color: var(--heading-background-color);
-    align-items: center;
+    color: var(--accent-color2);
+    
 }
 
-
+.trips-review-description {
+    color: #ffffff;
+    font-size: 1rem;
+}
 
 /*-----------------------------History section - ABOUT page---------------------------------*/
 
