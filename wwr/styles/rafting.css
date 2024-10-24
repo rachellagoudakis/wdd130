@@ -210,6 +210,12 @@ article img { /*smiley girl placement*/
 }
 
 /*---------------------------TITLE & FONT Formatting--------------------------------------*/
+h1, h2, h3, h4 { /*this tidies up all the spacing between headings*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
 h1 {
     margin: 1rem;
     font-size: 5em;
@@ -264,11 +270,11 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 240px 200px;
-    grid-gap: 20px;
+    grid-gap: 2rem;
     margin: 20px;
+    
     justify-content: center;
-    padding-bottom: 5px;
-  
+   
 }
 
 .trips-grid-item {
@@ -337,12 +343,19 @@ p {
     font-weight: bold; 
 }
 
+.trips-review-cell {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, .1)
+}
+
 .table-col1 {
     font-weight: bold;
     font-size: 1rem;
     color: #ffffff;
     letter-spacing: 1px;
     margin-left: 15px;
+    
 }
 
 .td-font {
@@ -361,8 +374,9 @@ html, body {
 /*------------Review section - TRIPS page only--------------*/
 
 .trip-review-section {
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 2rem;
+    padding-top: 1rem;
+   
 }
 
 .trips-h2 {
@@ -382,7 +396,7 @@ html, body {
     gap: 20px; 
     padding-top: 10px;
     margin-top: 10px;
-    height: 400px;
+    height: 300px;
     align-items: center;
     justify-items: center; 
     
